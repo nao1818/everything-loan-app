@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateThingsTable extends Migration
+class CreateLendTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,12 @@ class CreateThingsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('lends',function(Blueprint $table)
+        {
+            $table->increments('user_id');
+            $table->string('title');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +27,6 @@ class CreateThingsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('lends');
     }
 }

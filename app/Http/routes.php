@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -14,6 +15,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+ 
 
 Route::auth();
 
@@ -32,7 +36,9 @@ $this->post('admin/password/email', 'AdminAuth\PasswordController@sendResetLinkE
 $this->post('admin/password/reset', 'AdminAuth\PasswordController@reset');
 
 Route::get('/home', 'HomeController@index');
+// Route::get('admin/home', 'AdminHomeController@index');
+Route::get('admin/home','LendController@index');
 
-Route::get('admin/home', 'AdminHomeController@index');
+
 
 
