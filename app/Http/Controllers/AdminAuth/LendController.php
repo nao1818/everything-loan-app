@@ -1,13 +1,17 @@
 <?php
 
-namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+namespace App\Http\Controllers\AdminAuth;
 
-use App\Http\Requests;
+use App\Admin;
+// use Illuminate\Foundation\Auth\ThrottlesLogins;
+// use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
-class LendController extends Controller
+class LendController extends AuthController
 {
+    
+    
+   
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +29,7 @@ class LendController extends Controller
      */
     public function create()
     {
-       //
+        //
     }
 
     /**

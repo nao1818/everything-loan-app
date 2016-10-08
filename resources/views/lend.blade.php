@@ -18,7 +18,7 @@
 							
 							<tbody>
 								<tr>
-							    	<td>静的なTodoです</td>
+							    	<td>ハリーポッター</td>
 							    	<td><a class="btn btn-info" href="">編集</a></td>
 							    	<td><button class="btn btn-danger" type="submit">削除</button></td>
 								</tr>
